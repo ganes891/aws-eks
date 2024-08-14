@@ -23,7 +23,7 @@ variable "prefix_separator" {
 variable "cluster_name" {
   description = "Name of the EKS cluster"
   type        = string
-  default     = ""
+  default     = "ctc-dev"
 }
 
 variable "cluster_version" {
