@@ -47,7 +47,7 @@ variable "authentication_mode" {
 variable "cluster_additional_security_group_ids" {
   description = "List of additional, externally created security group IDs to attach to the cluster control plane"
   type        = list(string)
-  default     = [sg-0006d7d8164a651c0]
+  default     = ["sg-0006d7d8164a651c0"]
 }
 
 variable "control_plane_subnet_ids" {
