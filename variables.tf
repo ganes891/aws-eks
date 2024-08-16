@@ -47,19 +47,19 @@ variable "authentication_mode" {
 variable "cluster_additional_security_group_ids" {
   description = "List of additional, externally created security group IDs to attach to the cluster control plane"
   type        = list(string)
-  default     = []
+  default     = [sg-0006d7d8164a651c0]
 }
 
 variable "control_plane_subnet_ids" {
   description = "A list of subnet IDs where the EKS cluster control plane (ENIs) will be provisioned. Used for expanding the pool of subnets used by nodes/node groups without replacing the EKS control plane"
   type        = list(string)
-  default     = ["subnet-0c2ae61484e98e9f1", "subnet-07009fca4bf01da5a"]
+  default     = ["subnet-000f27e82e6f3a389", "subnet-0e62841fa81088917"]
 }
 
 variable "subnet_ids" {
   description = "A list of subnet IDs where the nodes/node groups will be provisioned. If `control_plane_subnet_ids` is not provided, the EKS cluster control plane (ENIs) will be provisioned in these subnets"
   type        = list(string)
-  default     = ["subnet-0c2ae61484e98e9f1", "subnet-07009fca4bf01da5a"]
+  default     = ["subnet-000f27e82e6f3a389", "subnet-0e62841fa81088917"]
 }
 
 variable "cluster_endpoint_private_access" {
