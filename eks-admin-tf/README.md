@@ -49,7 +49,7 @@ terraform apply -auto-approve
 
 # Configure kubeconfig for kubectl
 aws eks --region <region-code> update-kubeconfig --name <cluster_name>
-aws eks --region us-east-1 update-kubeconfig --name hr-dev-eksdemo1
+aws eks --region ap-southeast-1 update-kubeconfig --name hr-dev-eksdemo1
 
 # Verify Kubernetes Worker Nodes using kubectl
 kubectl get nodes
@@ -85,7 +85,7 @@ aws configure list-profiles
 aws configure --profile eksadmin1
 AWS Access Key ID: AKIASUF7HC7SYK3RO727
 AWS Secret Access Key: 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
-Default region: us-east-1
+Default region: ap-southeast-1
 Default output format: json
 
 # Get current user configured in AWS CLI
@@ -101,7 +101,7 @@ cat $HOME/.kube/config
 cat $HOME/.kube/config
 
 # Configure kubeconfig for eksadmin1 AWS CLI profile
-aws eks --region us-east-1 update-kubeconfig --name hr-dev-eksdemo1 --profile eksadmin1
+aws eks --region ap-southeast-1 update-kubeconfig --name hr-dev-eksdemo1 --profile eksadmin1
 
 # Verify kubeconfig file
 cat $HOME/.kube/config
@@ -140,9 +140,9 @@ kubectl -n kube-system get configmap aws-auth -o yaml
 Observation: Currently, eksadmin1 is configured as AWS CLI default profile, switch back to default profile. 
 
 # Configure kubeconfig for default AWS CLI profile (Switch back to EKS_Cluster_Create_User to perform these steps)
-aws eks --region us-east-1 update-kubeconfig --name hr-dev-eksdemo1 
+aws eks --region ap-southeast-1 update-kubeconfig --name hr-dev-eksdemo1 
 [or]
-aws eks --region us-east-1 update-kubeconfig --name hr-dev-eksdemo1 --profile default
+aws eks --region ap-southeast-1 update-kubeconfig --name hr-dev-eksdemo1 --profile default
 
 # Verify kubeconfig file
 cat $HOME/.kube/config
@@ -232,7 +232,7 @@ metadata:
 cat $HOME/.kube/config
 
 # Configure kubeconfig for eksadmin1 AWS CLI profile
-aws eks --region us-east-1 update-kubeconfig --name hr-dev-eksdemo1 --profile eksadmin1
+aws eks --region ap-southeast-1 update-kubeconfig --name hr-dev-eksdemo1 --profile eksadmin1
 
 # Verify kubeconfig file
 cat $HOME/.kube/config

@@ -78,7 +78,7 @@ terraform destroy
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_region"></a> [region](#input\_region) | The AWS region to deploy into (e.g. us-east-1) | `string` | `"us-west-2"` | no |
+| <a name="input_region"></a> [region](#input\_region) | The AWS region to deploy into (e.g. ap-southeast-1) | `string` | `"us-west-2"` | no |
 
 ## Outputs
 
