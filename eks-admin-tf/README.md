@@ -71,17 +71,7 @@ aws iam create-login-profile --user-name eksadmin1 --password @EKSUser101 --no-p
 aws iam create-access-key --user-name eksadmin1
 
 # Make a note of Access Key ID and Secret Access Key
-User: eksadmin1
-{
-    "AccessKey": {
-        "UserName": "eksadmin1",
-        "AccessKeyId": "AKIASUF7HC7SYK3RO727",
-        "Status": "Active",
-        "SecretAccessKey": "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",
-        "CreateDate": "2022-03-20T03:19:02+00:00"
-    }
-}
-```  
+
 
 ## Step-04: Create eksadmin1 user AWS CLI Profile 
 ```t
