@@ -261,3 +261,55 @@ Observation:
 ## Additional References 
 - [Enabling IAM user and role access to your cluster](https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html)
 - [AWS CLI Profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
+
+
+Added by Ganesh
+============================================
+aws_eks_node_group.eks_ng_public: Creation complete after 2m9s [id=SAP-dev-eksdemo:SAP-dev-eks-ng-public]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+aws_iam_openid_connect_provider_arn = "arn:aws:iam::599646583608:oidc-provider/oidc.eks.ap-southeast-1.amazonaws.com/id/7BCBF247B658D5A3FE65B352FF7D37D3"
+aws_iam_openid_connect_provider_extract_from_arn = "oidc.eks.ap-southeast-1.amazonaws.com/id/7BCBF247B658D5A3FE65B352FF7D37D3"
+azs = tolist([
+  "ap-southeast-1a",
+  "ap-southeast-1b",
+  "ap-southeast-1c",
+])
+cluster_arn = "arn:aws:eks:ap-southeast-1:599646583608:cluster/SAP-dev-eksdemo"
+cluster_certificate_authority_data = "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCVENDQWUyZ0F3SUJBZ0lJUGtwZ0JGT0pqdjB3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TkRBNE1qTXdOak16TVRkYUZ3MHpOREE0TWpFd05qTTRNVGRhTUJVeApFekFSQmdOVkJBTVRDbXQxWW1WeWJtVjBaWE13Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLCkFvSUJBUUM2ditFMXF5dUhrK2lxaW5GTWF1YWN6Rk4weUFHMy95VVBhNUh0UEVIRHhVWjBkcjhRMVRJSGd0K0kKTHY3SFI0ci9JTTljVEJkUmJNSnBXMGxaSDlSSXE1eFZDWDB5L3grY3oxZzgzVEN4akdnenRDZ0RnUDdiMGZ4eApoMm40WXdPRG9XLzUrMFlKcG1TMGFOT2l6eGp6Y3JzNnQ3R1BIMGU1cGtiVjdVYzRaYWt0RFJweWJNb3F0Vld5CmNKQWlxRjVRT0ptSzdOcmNaYlVveUpIMExiQk9BMnNqdHprWXVKV003eUpyRjVSdncwRnovU3A3NS9WMmg5d3UKWXFKLzdqSXNqUDc5SUhqR01sOGJWNTRxL1V1QldkZERKcGF5bzMzSUpGT2ExMVFkT0N5S2hnQVVmZUsvOGRjUgpBWGVtZ1NjY2pMNW1TUEdoNGNDWFozUzRETUxkQWdNQkFBR2pXVEJYTUE0R0ExVWREd0VCL3dRRUF3SUNwREFQCkJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJSdXAzY0RiOEFEdzBOSGtCQnJ6ZjhEOTFJcDBUQVYKQmdOVkhSRUVEakFNZ2dwcmRXSmxjbTVsZEdWek1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQ2w0bDFaSTRQUworZFVqNDBFaXVPYVVwMFhyWHZWV2JTa3hlSUVVa2NCR1BZMWZyNGxNMEx1RDJHRlR0QVQrdjd4Sm5FU2Y0eHNoCmtsWStKVjA4YitBL2lINjc2M1czQ1RheHNNZnJIcHFQbEpObjZid1pkZWZjbU81aHRDdyttaFVGcFp2Z2NMY2MKTUUxWUdESit0d05ycmovb2owanZtZGpsR2ZvSTRvUmVkVkR2d0ZpdHFtOEFtVGsvb2FuUlozSkVDWitIN0V2dQpRTjBTUm9wbiswNStSUTcwT1ZXVXluSlMrcmNJQ2p1V01tL25jRzJFSmh5MFhZcklDekgveWp0VVhDSVZPc2FiCm5STEZKU0JUbStkeDhPdW50UFhNZWp0ZGRmcXBOY0tVZW5ENjNWc1VnUUxqSXEwRFNXQmtnbWxBTkNzTktGek4KT29FdUxXWkRFM0gxCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+cluster_endpoint = "https://7BCBF247B658D5A3FE65B352FF7D37D3.gr7.ap-southeast-1.eks.amazonaws.com"
+cluster_iam_role_arn = "arn:aws:iam::599646583608:role/SAP-dev-eks-master-role"
+cluster_iam_role_name = "SAP-dev-eks-master-role"
+cluster_id = "SAP-dev-eksdemo"
+cluster_oidc_issuer_url = "https://oidc.eks.ap-southeast-1.amazonaws.com/id/7BCBF247B658D5A3FE65B352FF7D37D3"
+cluster_primary_security_group_id = "sg-033c54289e0b4f5e7"
+cluster_version = "1.30"
+ec2_bastion_public_instance_ids = "i-0fa708fa3774b1d7a"
+ec2_bastion_public_ip = "47.128.190.45"
+nat_public_ips = tolist([
+  "18.143.84.166",
+])
+node_group_public_arn = "arn:aws:eks:ap-southeast-1:599646583608:nodegroup/SAP-dev-eksdemo/SAP-dev-eks-ng-public/16c8bf09-ae21-ec07-2748-9409a588676f"
+node_group_public_id = "SAP-dev-eksdemo:SAP-dev-eks-ng-public"
+node_group_public_status = "ACTIVE"
+node_group_public_version = "1.30"
+private_subnets = [
+  "subnet-0bbd0b2ed5dd9c232",
+  "subnet-0144bfbbc2fa00137",
+]
+public_subnets = [
+  "subnet-00c804aa8fa936b56",
+  "subnet-0f884cf214c15ca1a",
+]
+vpc_cidr_block = "10.0.0.0/16"
+vpc_id = "vpc-0ad195b89fe2b4df1"
+
+==========================
+
+[root@ip-172-31-45-120 01-ekscluster-terraform-manifests]# aws eks update-kubeconfig --region ap-southeast-1 --name SAP-dev-eksdemo
+Added new context arn:aws:eks:ap-southeast-1:599646583608:cluster/SAP-dev-eksdemo to /root/.kube/config
+[root@ip-172-31-45-120 01-ekscluster-terraform-manifests]#
+
